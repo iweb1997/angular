@@ -9,8 +9,8 @@ import { Hero } from '../hero';
 })
 export class HeroesComponent{
 	heroes = HEROES;
-	selectedHero: '';
-	// onSelect(hero: Hero): void {
-	// 	this.selectedHero = hero;
-	// }
+	selectedHero= null;
+	onSelect(hero: Hero): void {
+		this.selectedHero = hero;
+	}
 }
